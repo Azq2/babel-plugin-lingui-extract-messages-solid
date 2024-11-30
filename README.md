@@ -1,54 +1,9 @@
-[![License][badge-license]][license]
-[![Version][badge-version]][package]
-[![Downloads][badge-downloads]][package]
+[![NPM Version](https://img.shields.io/npm/v/babel-plugin-lingui-extract-messages-solid)](https://www.npmjs.com/package/babel-plugin-lingui-extract-messages-solid)
 
-# @lingui/babel-plugin-extract-messages
+# Summary
 
-> Babel plugin which extracts messages for translation from source files
+This is fork of the [@lingui/babel-plugin-extract-messages](https://www.npmjs.com/package/@lingui/babel-plugin-extract-messages) with SolidJS support.
 
-`@lingui/babel-plugin-extract-messages` is part of [LinguiJS][linguijs]. See the [documentation][documentation] for all information, tutorials and examples.
+Use this babel plugin with [lingui-solid](https://www.npmjs.com/package/lingui-solid).
 
-## Installation
-
-```sh
-npm install --save-dev @lingui/babel-plugin-extract-messages
-# yarn add --dev @lingui/babel-plugin-extract-messages
-```
-
-## Usage
-
-### Via `.babelrc` (Recommended)
-
-**.babelrc**
-
-```json
-{
-  "plugins": ["@lingui/babel-plugin-extract-messages"]
-}
-```
-
-### Via CLI
-
-```bash
-babel --plugins @lingui/babel-plugin-extract-messages script.js
-```
-
-### Via Node API
-
-```js
-require("@babel/core").transform("code", {
-  plugins: ["@lingui/babel-plugin-extract-messages"]
-})
-```
-
-## License
-
-[MIT][license]
-
-[license]: https://github.com/lingui/js-lingui/blob/main/LICENSE
-[linguijs]: https://github.com/lingui/js-lingui
-[documentation]: https://lingui.dev
-[package]: https://www.npmjs.com/package/@lingui/babel-plugin-extract-messages
-[badge-downloads]: https://img.shields.io/npm/dw/@lingui/babel-plugin-extract-messages.svg
-[badge-version]: https://img.shields.io/npm/v/@lingui/babel-plugin-extract-messages.svg
-[badge-license]: https://img.shields.io/npm/l/@lingui/babel-plugin-extract-messages.svg
+More details: https://github.com/lingui/js-lingui/pull/2101
