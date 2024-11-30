@@ -1,7 +1,22 @@
 {
-  "extends": "../../tsconfig.json",
   "compilerOptions": {
     "strict": true,
     "strictNullChecks": false,
-  }
+    "noEmit": true,
+    "baseUrl": "./",
+    "pretty": true,
+    "esModuleInterop": true,
+    "stripInternal": true,
+    "noUnusedLocals": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "target": "es2017",
+    "paths": {}
+  },
+  "exclude": [
+    "dist",
+    "**/__typetests__/**"
+  ]
 }

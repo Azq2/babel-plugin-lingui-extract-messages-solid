@@ -40,11 +40,15 @@
     "node": ">=20.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.21.0",
-    "@babel/traverse": "^7.20.12",
-    "@babel/types": "^7.20.7",
-    "@lingui/babel-plugin-lingui-macro": "workspace:*",
-    "@lingui/jest-mocks": "workspace:*",
+    "@babel/core": "^7.26.0",
+    "@babel/traverse": "^7.25.9",
+    "@babel/types": "^7.26.0",
     "unbuild": "2.0.0"
+  },
+  "dependencies": {
+    "@types/babel__core": "^7.20.5",
+    "@types/babel__traverse": "^7.20.6",
+    "babel-plugin-lingui-solid-macro": "^5.0.3",
+    "rimraf": "^6.0.1"
   }
 }
