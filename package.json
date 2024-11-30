@@ -1,10 +1,33 @@
 {
-  "name": "@lingui/babel-plugin-extract-messages",
+  "name": "babel-plugin-lingui-extract-messages-solid",
   "version": "5.0.0",
   "description": "Babel plugin for collecting messages from source code for internationalization",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.cjs"
+      },
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.mjs"
+      }
+    },
+    "./extractor": {
+      "require": {
+        "types": "./dist/extractor.d.ts",
+        "default": "./dist/extractor.cjs"
+      },
+      "import": {
+        "types": "./dist/extractor.d.ts",
+        "default": "./dist/extractor.mjs"
+      }
+    },
+    "./package.json": "./package.json"
+  },
   "author": {
     "name": "Tomáš Ehrlich",
     "email": "tomas.ehrlich@gmail.com"
@@ -31,24 +54,33 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/lingui/js-lingui.git"
+    "url": "https://github.com/Azq2/babel-plugin-lingui-extract-messages-solid.git"
   },
   "bugs": {
-    "url": "https://github.com/lingui/js-lingui/issues"
+    "url": "https://github.com/Azq2/babel-plugin-lingui-extract-messages-solid/issues"
   },
   "engines": {
     "node": ">=20.0.0"
   },
-  "devDependencies": {
-    "@babel/core": "^7.26.0",
+  "dependencies": {
+    "@babel/core": "^7.21.0",
+    "@babel/parser": "^7.26.2",
     "@babel/traverse": "^7.25.9",
     "@babel/types": "^7.26.0",
-    "unbuild": "2.0.0"
+    "convert-source-map": "^2.0.0",
+    "source-map": "^0.7.4"
   },
-  "dependencies": {
+  "peerDependencies": {
+    "@lingui/conf": "^5.0.0",
+    "@lingui/core": "^5.0.0",
+    "babel-plugin-lingui-solid-macro": "^5.0.0"
+  },
+  "devDependencies": {
     "@types/babel__core": "^7.20.5",
     "@types/babel__traverse": "^7.20.6",
-    "babel-plugin-lingui-solid-macro": "^5.0.3",
-    "rimraf": "^6.0.1"
+    "@types/convert-source-map": "^2.0.3",
+    "@types/node": "^22.10.1",
+    "rimraf": "^6.0.1",
+    "unbuild": "2.0.0"
   }
 }

@@ -1,4 +1,4 @@
- import type * as BabelTypesNamespace from "@babel/types"
+import type * as BabelTypesNamespace from "@babel/types"
 import {
   Expression,
   Identifier,
@@ -197,7 +197,6 @@ function hasI18nComment(node: Node): boolean {
 }
 
 export default function ({ types: t }: { types: BabelTypes }): PluginObj {
-  console.log('shit')
   function isTransComponent(path: NodePath) {
     return (
       path.isJSXElement() &&
