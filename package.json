@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-lingui-extract-messages-solid",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "description": "Babel plugin for collecting messages from source code for internationalization",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
