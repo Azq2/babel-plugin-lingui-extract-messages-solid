@@ -16,7 +16,7 @@ import { ParserPlugin } from "@babel/parser"
 
 import linguiMacroPlugin, {
   type LinguiPluginOpts,
-} from "babel-plugin-lingui-solid-macro"
+} from "babel-plugin-lingui-macro-solid"
 
 const babelRe = new RegExp(
   "\\.(" +
